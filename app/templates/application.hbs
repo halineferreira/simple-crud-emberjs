@@ -7,13 +7,13 @@
 <form>
     <div class="row">
         <div class="col">
-        <input type="text" class="form-control" placeholder="Nome">
+            {{input value=employeeName class="form-control" placeholder="Nome"}}
         </div>
         <div class="col">
-        <input type="text" class="form-control" placeholder="Email">
+            {{input value=employeeEmail class="form-control" placeholder="Email"}}
         </div>
         <div class="col">
-            <button type="button" class="btn btn-primary">Inserir</button>
+            <button {{action "addEmployee"}} type="button" class="btn btn-primary">Inserir</button>
         </div>
     </div>
 </form>
