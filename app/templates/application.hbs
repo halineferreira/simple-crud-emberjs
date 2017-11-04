@@ -4,4 +4,34 @@
 
 <h1>Funcionários</h1>
 
+<form>
+    <div class="row">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Nome">
+        </div>
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Email">
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary">Inserir</button>
+        </div>
+    </div>
+</form>
+<br>
+<div id="list" class="row">
+    <div class="table-responsive col-md-12">
+        <table class="table table-striped table-condensed" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th class="actions">Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+                {{employees-form employees=employees}}
+            </tbody>
+        </table>
+    </div>
+</div>
 {{outlet}}
