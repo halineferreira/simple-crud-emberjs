@@ -3,10 +3,7 @@ import Component from '@ember/component';
 
 export default Component.extend({
     tagName:'',
-    employees: [
-        {name: 'Marie Curie Hard', email: 'haline@hehe.com'}, 
-        {name: 'Mae Jemison Hard', email: 'haline@hehe.com'}
-    ],
+    employees: [],
     actions: {
         addEmployee(){
             let employeeName = this.get('employeeName');
